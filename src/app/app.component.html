@@ -1,0 +1,32 @@
+<p>
+  一括
+  <input type="checkbox" id="all" (change)="isToggle($event)" />
+</p>
+
+<span>
+  ①
+  <input
+    type="checkbox"
+    id="id1"
+    [(ngModel)]="checkbox1"
+    (change)="isToggle($event)"
+  />
+</span>
+<span>
+  ②
+  <input
+    type="checkbox"
+    id="id2"
+    [(ngModel)]="checkbox2"
+    (change)="isToggle($event)"
+  />
+</span>
+<span>
+  ③
+  <input
+    type="checkbox"
+    id="id3"
+    [(ngModel)]="checkbox3"
+    (change)="isToggle($event)"
+  />
+</span>
