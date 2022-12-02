@@ -17,6 +17,20 @@ export class AppComponent {
     console.log('element', element);
 
     switch (element.id) {
+      // 一括を操作
+      case 'all':
+        if (element.checked) {
+          // ①②③全てをチェックドに
+          this.checkbox1 = true;
+          this.checkbox2 = true;
+          this.checkbox3 = true;
+        } else {
+          // ①②③全てのチェックを外す
+          this.checkbox1 = false;
+          this.checkbox2 = false;
+          this.checkbox3 = false;
+        }
+        break;
       // チェックボックス①を操作
       case 'id1':
         if (element.checked) {
